@@ -4,16 +4,24 @@ import {
   HeartOutlined,
   LockOutlined,
   ReadOutlined,
-  TeamOutlined
-} from '@ant-design/icons';
-import { Button, Card, Carousel, Col, Row, Space, Timeline, Typography } from 'antd';
+  TeamOutlined,
+} from "@ant-design/icons";
+import {
+  Button,
+  Card,
+  Carousel,
+  Col,
+  Row,
+  Space,
+  Timeline,
+  Typography,
+} from "antd";
 
 const { Title, Paragraph, Text } = Typography;
 
 const HomePage = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
       <div className="relative h-[500px] overflow-hidden">
         <img
           src="/src/assets/back_triết tình.jpg"
@@ -23,9 +31,7 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-pink-500/70 to-blue-500/70">
           <div className="container flex items-center h-full px-4 mx-auto">
             <div className="max-w-2xl text-white">
-              <Title className="mb-6 text-white">
-                Triết Tình
-              </Title>
+              <Title className="mb-6 text-white">Triết Tình</Title>
               <Paragraph className="text-xl text-white/90">
                 Khám phá chiều sâu của tình yêu và trách nhiệm trong triết học
               </Paragraph>
@@ -54,8 +60,8 @@ const HomePage = () => {
                 Khái Niệm Cơ Bản
               </Title>
               <Paragraph className="text-lg text-gray-700">
-                Tình yêu và trách nhiệm là hai yếu tố then chốt trong đời sống con người,
-                ảnh hưởng tới gia đình, cộng đồng và xã hội.
+                Tình yêu và trách nhiệm là hai yếu tố then chốt trong đời sống
+                con người, ảnh hưởng tới gia đình, cộng đồng và xã hội.
               </Paragraph>
             </Col>
           </Row>
@@ -110,7 +116,8 @@ const HomePage = () => {
                   Ứng Dụng
                 </Title>
                 <Paragraph>
-                  Trong gia đình, tình yêu phải bao hàm các nghĩa vụ và trách nhiệm.
+                  Trong gia đình, tình yêu phải bao hàm các nghĩa vụ và trách
+                  nhiệm.
                 </Paragraph>
               </Card>
             </Col>
@@ -133,7 +140,9 @@ const HomePage = () => {
                     dot: <div className="w-3 h-3 bg-pink-500 rounded-full" />,
                     children: (
                       <div className="ml-2">
-                        <Text strong className="block mb-2 text-lg">Tự Do Lựa Chọn</Text>
+                        <Text strong className="block mb-2 text-lg">
+                          Tự Do Lựa Chọn
+                        </Text>
                         <Text className="text-gray-600">
                           Tình yêu là một sự lựa chọn tự do của mỗi cá nhân
                         </Text>
@@ -144,9 +153,12 @@ const HomePage = () => {
                     dot: <div className="w-3 h-3 bg-blue-500 rounded-full" />,
                     children: (
                       <div className="ml-2">
-                        <Text strong className="block mb-2 text-lg">Trách Nhiệm</Text>
+                        <Text strong className="block mb-2 text-lg">
+                          Trách Nhiệm
+                        </Text>
                         <Text className="text-gray-600">
-                          Khi yêu, con người trở nên có trách nhiệm với đối phương
+                          Khi yêu, con người trở nên có trách nhiệm với đối
+                          phương
                         </Text>
                       </div>
                     ),
@@ -155,7 +167,9 @@ const HomePage = () => {
                     dot: <div className="w-3 h-3 bg-yellow-500 rounded-full" />,
                     children: (
                       <div className="ml-2">
-                        <Text strong className="block mb-2 text-lg">Cảnh Báo</Text>
+                        <Text strong className="block mb-2 text-lg">
+                          Cảnh Báo
+                        </Text>
                         <Text className="text-gray-600">
                           Tránh để tình yêu trở thành sự &ldquo;chiếm hữu&rdquo;
                         </Text>
@@ -166,15 +180,30 @@ const HomePage = () => {
               />
             </Col>
             <Col xs={24} md={12}>
-              <Carousel autoplay className="overflow-hidden rounded-lg shadow-xl">
+              <Carousel
+                autoplay
+                className="overflow-hidden rounded-lg shadow-xl"
+              >
                 <div>
-                  <img src="/src/assets/Carousel_triết.jpg" alt="Freedom" className="w-full" />
+                  <img
+                    src="/src/assets/Carousel_triết.jpg"
+                    alt="Freedom"
+                    className="w-full"
+                  />
                 </div>
                 <div>
-                  <img src="/src/assets/Carousel_triết3.jpg" alt="Responsibility" className="w-full" />
+                  <img
+                    src="/src/assets/Carousel_triết3.jpg"
+                    alt="Responsibility"
+                    className="w-full"
+                  />
                 </div>
                 <div>
-                  <img src="/src/assets/Carousel_triết2.jpg" alt="Love" className="w-full" />
+                  <img
+                    src="/src/assets/Carousel_triết2.jpg"
+                    alt="Love"
+                    className="w-full"
+                  />
                 </div>
               </Carousel>
             </Col>
