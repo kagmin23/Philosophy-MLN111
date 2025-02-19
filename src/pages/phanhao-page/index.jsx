@@ -4,85 +4,19 @@ import { useEffect, useState } from "react";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+
 import "./index.css";
+import CommentList from "./comment/comment";
 
 const TinhYeuTrongTrietHoc = () => {
-  const [comments, setComments] = useState([]);
-  const [newComment, setNewComment] = useState("");
-  const [quotes, setQuotes] = useState([]);
   const [setLoading] = useState(true);
-
-  const API_QUOTES = "https://65f3f34a105614e654a18199.mockapi.io/philosophers";
-  const API_COMMENTS = "https://65f3f34a105614e654a18199.mockapi.io/comments";
-
-  useEffect(() => {
-    fetch(API_COMMENTS)
-      .then((response) => {
-        if (!response.ok) throw new Error("Không thể tải bình luận.");
-        return response.json();
-      })
-      .then((data) => {
-        setComments((prevComments) => [data, ...prevComments]);
-        setLoading(false);
-        message.success("Bình luận đã được gửi thành công!");
-      })
-      .catch((error) => {
-        console.error("Lỗi lấy bình luận:", error);
-        message.error("Lỗi tải bình luận!");
-        setLoading(false);
-      });
-  }, []);
-
-  useEffect(() => {
-    fetch(API_QUOTES)
-      .then((response) => {
-        if (!response.ok) throw new Error("Không thể tải danh sách triết gia.");
-        return response.json();
-      })
-      .then((data) => setQuotes(data))
-      .catch((error) => {
-        console.error("Lỗi lấy triết gia:", error);
-        message.error("Lỗi tải danh sách triết gia!");
-      });
-  }, []);
-
-  const handleAddComment = () => {
-    if (newComment.trim()) {
-      const newCommentObj = {
-        id: comments.length + 1,
-        username: "Người dùng mới",
-        comment: newComment,
-      };
-
-      fetch(API_COMMENTS, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newCommentObj),
-      })
-        .then((response) => {
-          if (!response.ok) throw new Error("Gửi bình luận thất bại.");
-          return response.json();
-        })
-        .then((data) => {
-          setComments([data, ...comments]);
-          message.success("Bình luận đã được gửi thành công!");
-        })
-        .catch((error) => {
-          console.error("Lỗi gửi bình luận:", error);
-          message.error("Gửi bình luận thất bại. Vui lòng thử lại.");
-        });
-
-      setNewComment("");
-    } else {
-      message.warning("Vui lòng nhập nội dung bình luận!");
-    }
-  };
-
   return (
-    <div className="min-h-screen mt-5 bg-white App">
-      <header className="px-4 py-6 text-center text-white bg-pink-500">
-        <h1 className="text-3xl font-bold">Tình Yêu Trong Triết Học</h1>
-        <p className="mt-2">
+    <div className="min-h-screen p-6 mt-5 bg-gradient-to-b from-pink-100 to-white">
+      <header className="px-4 py-6 text-center text-white ">
+        <h1 className="text-3xl font-semibold text-center text-pink-700">
+          Tình Yêu Trong Triết Học
+        </h1>
+        <p className="my-2 text-center text-gray-600">
           "Tình yêu là ngôn ngữ của tâm hồn, vượt qua mọi ranh giới."
         </p>
       </header>
@@ -112,43 +46,6 @@ const TinhYeuTrongTrietHoc = () => {
             cả mọi người." – Karl Marx
           </blockquote>
         </div>
-
-        <section className="max-w-4xl p-6 mx-auto mt-8 bg-white rounded-lg shadow-lg">
-          <h2 className="mb-4 text-2xl font-bold text-blue-500">
-            Những Câu Nói Nổi Tiếng Về Tình Yêu
-          </h2>
-          {quotes.length === 0 ? (
-            <p className="text-center text-gray-500">Không có dữ liệu.</p>
-          ) : (
-            <Swiper
-              modules={[Pagination, Navigation]}
-              spaceBetween={30}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              navigation
-              className="swiper-container"
-            >
-              {quotes.map((quote) => (
-                <SwiperSlide
-                  key={quote.id}
-                  className="flex flex-col items-center justify-center p-6"
-                >
-                  <img
-                    src={quote.avatar}
-                    alt={quote.name}
-                    className="object-cover w-24 h-24 mb-4 rounded-full"
-                  />
-                  <h3 className="text-xl font-semibold text-gray-800">
-                    {quote.name}
-                  </h3>
-                  <blockquote className="mt-2 italic text-center text-gray-700">
-                    "{quote.quote}"
-                  </blockquote>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          )}
-        </section>
 
         <h2 className="mt-8 mb-4 text-2xl font-bold text-blue-500">
           Bảng So Sánh Các Triết Học Về Tình Yêu
@@ -192,37 +89,7 @@ const TinhYeuTrongTrietHoc = () => {
           </tbody>
         </table>
 
-        <h2 className="mt-8 mb-4 text-2xl font-bold text-blue-500">
-          Diễn đàn thảo luận
-        </h2>
-        <div>
-          <TextArea
-            value={newComment}
-            onChange={(e) => setNewComment(e.target.value)}
-            placeholder="Nhập bình luận của bạn..."
-            rows={4}
-            className="mb-4"
-          />
-          <Button
-            type="primary"
-            onClick={handleAddComment}
-            className="bg-pink-500"
-          >
-            Gửi bình luận
-          </Button>
-          <List
-            className="mt-4"
-            dataSource={comments}
-            renderItem={(item) => (
-              <List.Item className="p-3 bg-gray-100 border rounded-lg shadow-sm">
-                <div>
-                  <strong className="text-blue-600">{item.username}:</strong>
-                  <p className="text-gray-800">{item.comment}</p>
-                </div>
-              </List.Item>
-            )}
-          />
-        </div>
+        <CommentList />
 
         <h2 className="mt-8 mb-4 text-2xl font-bold text-blue-500">
           Video Minh Họa
