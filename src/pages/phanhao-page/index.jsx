@@ -1,20 +1,17 @@
-<<<<<<< HEAD
-=======
 import { Button, List, message } from "antd";
 import TextArea from "antd/es/input/TextArea";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import "./index.css";
 
->>>>>>> 648c82277a477e820acb9e97755c55e33d1cfe49
 const PhanHao = () => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
   const [quotes, setQuotes] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [setLoading] = useState(true);
 
   const API_QUOTES = "https://65f3f34a105614e654a18199.mockapi.io/philosophers";
   const API_COMMENTS = "https://65f3f34a105614e654a18199.mockapi.io/comments";
@@ -83,16 +80,16 @@ const PhanHao = () => {
   };
 
   return (
-    <div className="App bg-white min-h-screen">
-      <header className="bg-pink-500 text-white py-6 px-4 text-center">
+    <div className="min-h-screen bg-white App">
+      <header className="px-4 py-6 text-center text-white bg-pink-500">
         <h1 className="text-3xl font-bold">Tình Yêu Trong Triết Học</h1>
         <p className="mt-2">
           "Tình yêu là ngôn ngữ của tâm hồn, vượt qua mọi ranh giới."
         </p>
       </header>
 
-      <section className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-8">
-        <h2 className="text-2xl font-bold text-blue-500 mb-4">
+      <section className="max-w-4xl p-6 mx-auto mt-8 bg-white rounded-lg shadow-lg">
+        <h2 className="mb-4 text-2xl font-bold text-blue-500">
           Quan điểm của triết học Mác - Lênin về tình yêu
         </h2>
         <div className="space-y-4">
@@ -117,12 +114,12 @@ const PhanHao = () => {
           </blockquote>
         </div>
 
-        <section className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-8">
-          <h2 className="text-2xl font-bold text-blue-500 mb-4">
+        <section className="max-w-4xl p-6 mx-auto mt-8 bg-white rounded-lg shadow-lg">
+          <h2 className="mb-4 text-2xl font-bold text-blue-500">
             Những Câu Nói Nổi Tiếng Về Tình Yêu
           </h2>
           {quotes.length === 0 ? (
-            <p className="text-gray-500 text-center">Không có dữ liệu.</p>
+            <p className="text-center text-gray-500">Không có dữ liệu.</p>
           ) : (
             <Swiper
               modules={[Pagination, Navigation]}
@@ -140,12 +137,12 @@ const PhanHao = () => {
                   <img
                     src={quote.avatar}
                     alt={quote.name}
-                    className="w-24 h-24 rounded-full object-cover mb-4"
+                    className="object-cover w-24 h-24 mb-4 rounded-full"
                   />
                   <h3 className="text-xl font-semibold text-gray-800">
                     {quote.name}
                   </h3>
-                  <blockquote className="italic text-center text-gray-700 mt-2">
+                  <blockquote className="mt-2 italic text-center text-gray-700">
                     "{quote.quote}"
                   </blockquote>
                 </SwiperSlide>
@@ -154,49 +151,49 @@ const PhanHao = () => {
           )}
         </section>
 
-        <h2 className="text-2xl font-bold text-blue-500 mt-8 mb-4">
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-blue-500">
           Bảng So Sánh Các Triết Học Về Tình Yêu
         </h2>
-        <table className="w-full border-collapse border border-gray-300">
+        <table className="w-full border border-collapse border-gray-300">
           <thead>
             <tr className="bg-pink-100">
-              <th className="border border-gray-300 p-2">Triết học</th>
-              <th className="border border-gray-300 p-2">
+              <th className="p-2 border border-gray-300">Triết học</th>
+              <th className="p-2 border border-gray-300">
                 Quan điểm về tình yêu
               </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td className="border border-gray-300 p-2">Mác - Lênin</td>
-              <td className="border border-gray-300 p-2">
+              <td className="p-2 border border-gray-300">Mác - Lênin</td>
+              <td className="p-2 border border-gray-300">
                 Tình yêu mang tính giai cấp, xã hội và trách nhiệm.
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 p-2">Phật giáo</td>
-              <td className="border border-gray-300 p-2">
+              <td className="p-2 border border-gray-300">Phật giáo</td>
+              <td className="p-2 border border-gray-300">
                 Tình yêu là lòng từ bi, vị tha và không dính mắc.
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 p-2">Nho giáo</td>
-              <td className="border border-gray-300 p-2">
+              <td className="p-2 border border-gray-300">Nho giáo</td>
+              <td className="p-2 border border-gray-300">
                 Tình yêu dựa trên quan hệ đạo đức và gia đình.
               </td>
             </tr>
             <tr>
-              <td className="border border-gray-300 p-2">
+              <td className="p-2 border border-gray-300">
                 Triết học phương Tây
               </td>
-              <td className="border border-gray-300 p-2">
+              <td className="p-2 border border-gray-300">
                 Tình yêu mang tính cá nhân và tự do cá nhân.
               </td>
             </tr>
           </tbody>
         </table>
 
-        <h2 className="text-2xl font-bold text-blue-500 mt-8 mb-4">
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-blue-500">
           Diễn đàn thảo luận
         </h2>
         <div>
@@ -218,7 +215,7 @@ const PhanHao = () => {
             className="mt-4"
             dataSource={comments}
             renderItem={(item) => (
-              <List.Item className="border p-3 rounded-lg shadow-sm bg-gray-100">
+              <List.Item className="p-3 bg-gray-100 border rounded-lg shadow-sm">
                 <div>
                   <strong className="text-blue-600">{item.username}:</strong>
                   <p className="text-gray-800">{item.comment}</p>
@@ -228,7 +225,7 @@ const PhanHao = () => {
           />
         </div>
 
-        <h2 className="text-2xl font-bold text-blue-500 mt-8 mb-4">
+        <h2 className="mt-8 mb-4 text-2xl font-bold text-blue-500">
           Video Minh Họa
         </h2>
         <div className="aspect-w-16 aspect-h-9">

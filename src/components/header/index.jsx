@@ -35,7 +35,6 @@ const HeaderComponent = () => {
     setVisible(false);
   };
 
-<<<<<<< HEAD
     return (
         <Header className="fixed top-0 left-0 z-50 w-full bg-white shadow-md">
             <div className="container flex items-center justify-between h-full px-4 mx-auto">
@@ -46,18 +45,6 @@ const HeaderComponent = () => {
                 >
                     Triết Tình
                 </div>
-=======
-  return (
-    <Header className="fixed z-50 w-full bg-white shadow-md">
-      <div className="container flex items-center justify-between h-full px-4 mx-auto">
-        {/* Logo */}
-        <div
-          className="text-2xl font-bold text-pink-600 cursor-pointer"
-          onClick={() => navigate("/")}
-        >
-          Triết Tình
-        </div>
->>>>>>> 648c82277a477e820acb9e97755c55e33d1cfe49
 
         {/* Desktop Menu */}
         <div className="hidden lg:block">
