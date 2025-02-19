@@ -1,13 +1,12 @@
 import { Button, List, message } from "antd";
 import TextArea from "antd/es/input/TextArea";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import "./index.css";
 
-const PhanHao = () => {
+const TinhYeuTrongTrietHoc = () => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
   const [quotes, setQuotes] = useState([]);
@@ -80,7 +79,7 @@ const PhanHao = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white App">
+    <div className="min-h-screen mt-5 bg-white App">
       <header className="px-4 py-6 text-center text-white bg-pink-500">
         <h1 className="text-3xl font-bold">Tình Yêu Trong Triết Học</h1>
         <p className="mt-2">
@@ -245,4 +244,4 @@ const PhanHao = () => {
   );
 };
 
-export default PhanHao;
+export default TinhYeuTrongTrietHoc;

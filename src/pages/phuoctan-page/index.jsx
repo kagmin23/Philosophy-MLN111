@@ -1,7 +1,8 @@
-const PhuocTan = () => {
-  return (
-    <div>index</div>
-  )
-}
+const TrachNhiemTrongTrietHoc
+  = () => {
+    return (
+      <div>index</div>
+    )
+  }
 
-export default PhuocTan
+export default TrachNhiemTrongTrietHoc;

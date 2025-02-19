@@ -1,7 +1,7 @@
-const CongDanh = () => {
+const UngDungVaoDoiSong = () => {
   return (
     <div>index</div>
   )
 }
 
-export default CongDanh
+export default UngDungVaoDoiSong
