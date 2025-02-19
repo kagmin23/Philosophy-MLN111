@@ -197,23 +197,24 @@ const TinhYeuTrongTrietHoc = () => {
           </table>
         </Card>
 
-        <Card className="my-4 border-pink-300 shadow-md">
-          <h2 className="text-2xl font-semibold text-center text-pink-600">
-            Video Minh Họa
-          </h2>
+        <h2 className="text-2xl font-semibold text-center text-pink-600">
+          Video Minh Họa
+        </h2>
 
-          <div className="rounded-lg overflow-hidden flex justify-center">
-            <div className="w-[300px] md:w-[400px] lg:w-[500px] aspect-video">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/jKHe-Lrhh8k?si=LcThwv35EtQJFozZ"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+        <div className="rounded-lg overflow-hidden flex justify-center">
+          <div className="w-[300px] md:w-[400px] lg:w-[500px] aspect-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/3LCl2UOtUlk?si=p57BIk_AhXQWwk1K"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
-        </Card>
+        </div>
 
         <section className="py-16 text-white bg-gradient-to-r from-pink-500 to-blue-500">
           <div className="container px-4 mx-auto text-center">
