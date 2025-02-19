@@ -1,8 +1,7 @@
-import React from 'react'
 
 const CongDanh = () => {
   return (
-    <div>index</div>
+    <div>testing</div>
   )
 }
 
