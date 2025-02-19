@@ -1,6 +1,7 @@
 import { Card } from "antd";
 import CommentList from "./comment/comment";
 import PhilosopherSlider from "./slider/PhilosopherSlider";
+import "./index.css";
 
 const TinhYeuTrongTrietHoc = () => {
   return (
@@ -75,7 +76,7 @@ const TinhYeuTrongTrietHoc = () => {
           </table>
         </Card>
 
-        <Card className="my-4 border-pink-300 shadow-md">
+        <Card className="my-4 border-pink-300 shadow-md ">
           <CommentList />
         </Card>
 
@@ -84,14 +85,16 @@ const TinhYeuTrongTrietHoc = () => {
             Video Minh Họa
           </h2>
 
-          <div className="rounded-lg overflow-hidden shadow-md">
-            <iframe
-              className="w-full aspect-video"
-              src="https://www.youtube.com/embed/jKHe-Lrhh8k?si=LcThwv35EtQJFozZ"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="rounded-lg overflow-hidden flex justify-center">
+            <div className="w-[300px] md:w-[400px] lg:w-[500px] aspect-video">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/jKHe-Lrhh8k?si=LcThwv35EtQJFozZ"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </Card>
       </section>
