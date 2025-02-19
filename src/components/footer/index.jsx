@@ -14,7 +14,7 @@ const { Title, Text, Link } = Typography;
 
 const FooterComponent = () => {
     return (
-        <Footer className="py-12 text-white bg-gradient-to-b from-blue-500 to-white">
+        <Footer className="text-white py-7 bg-gradient-to-b from-blue-500 to-white ">
             <div className="container justify-between px-4 mx-auto text-center">
                 <Row gutter={[32, 32]}>
                     <Col xs={24} sm={12} md={6}>

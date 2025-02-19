@@ -36,7 +36,7 @@ const HeaderComponent = () => {
     };
 
     return (
-        <Header className="fixed z-50 w-full bg-white shadow-md">
+        <Header className="fixed top-0 left-0 z-50 w-full bg-white shadow-md">
             <div className="container flex items-center justify-between h-full px-4 mx-auto">
                 {/* Logo */}
                 <div
