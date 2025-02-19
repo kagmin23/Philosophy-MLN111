@@ -13,6 +13,8 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
     "antd": "^5.24.0",
+    "axios": "^1.7.9",
+    "framer-motion": "^12.4.5",
     "philosophy": "file:",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
