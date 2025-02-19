@@ -15,7 +15,7 @@ const AppRouter = () => {
         <Route path="phuoctan" element={<PhuocTan />} />
         <Route path="kangmin" element={<KangMin />} />
         <Route path="congdanh" element={<CongDanh />} />
-        <Route path="phanhao" element={<PhanHao />} />
+        <Route path="tinh-yeu" element={<PhanHao />} />
       </Route>
     </Routes>
   );
