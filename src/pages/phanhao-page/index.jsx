@@ -1,7 +1,9 @@
-import { Card } from "antd";
+import { Button, Card, Col, Row, Space, Typography } from "antd";
+const { Title, Paragraph, Text } = Typography;
 import CommentList from "./comment/comment";
 import PhilosopherSlider from "./slider/PhilosopherSlider";
 import "./index.css";
+import { ArrowRightOutlined } from "@ant-design/icons";
 
 const TinhYeuTrongTrietHoc = () => {
   return (
@@ -13,29 +15,148 @@ const TinhYeuTrongTrietHoc = () => {
         </p>
       </header>
 
-      <section className="max-w-5xl mx-auto  rounded-2xl">
-        <Card className="my-4 border-pink-300 shadow-md">
-          <h2 className="text-2xl text-center text-pink-700">
-            Quan điểm của triết học Mác - Lênin về tình yêu
-          </h2>
-          <div className="space-y-4 text-gray-700 leading-relaxed">
-            <p>
-              Theo Mác, con người không chỉ yêu cá nhân mà còn yêu tập thể, yêu
-              con người nói chung. Ví dụ: Tình yêu giữa các thành viên trong xã
-              hội chủ nghĩa phải đặt trên cơ sở bình đẳng và đoàn kết.
-            </p>
-            <p>
-              Chủ nghĩa Mác - Lênin nhấn mạnh vào tinh thần quốc tế vô sản, nơi
-              tình yêu không chỉ giới hạn trong biên giới quốc gia mà còn là sự
-              đoàn kết giữa các dân tộc.
-            </p>
-            <blockquote className="italic text-base text-center text-gray-600">
-              "Sự phát triển của một người là điều kiện cho sự phát triển của
-              tất cả mọi người." – Karl Marx
-            </blockquote>
+      <section className="max-w-7xl mx-auto rounded-2xl">
+        <Card className="my-2 border-pink-300 shadow-md flex flex-row justify-start">
+          <div className="container mx-auto">
+            <h2 className="text-2xl text-center text-pink-700">
+              Quan điểm của Triết học Mác - Lênin về tình yêu
+            </h2>
+            <Row gutter={[32, 32]} align="middle" className="mb-8">
+              <Col xs={24} md={10}>
+                <img
+                  src="https://baoquangbinh.vn/dataimages/202004/original/images666982_lenin_20420a.jpg"
+                  alt="Philosophy concept"
+                  className="w-full rounded-lg shadow-2xl hover:shadow-[0px_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300"
+                />
+              </Col>
+              <Col xs={24} md={14}>
+                <h4 className="text-pink-700">Tình yêu con người</h4>
+                <p>
+                  - Theo Mác, con người không chỉ yêu cá nhân mà còn yêu tập
+                  thể, yêu con người nói chung.
+                </p>
+                <p>
+                  - Tình yêu giữa các thành viên trong xã hội chủ nghĩa đặt trên
+                  cơ sở bình đẳng, đoàn kết và cùng phát triển.
+                </p>
+                <p>
+                  Ví dụ: Trong xã hội chủ nghĩa, tình yêu giữa các cá nhân phải
+                  gắn với trách nhiệm xã hội, không đơn thuần là tình cảm riêng
+                  tư.
+                </p>
+              </Col>
+            </Row>
+            <Row gutter={[32, 32]} align="middle" className="mb-8">
+              <Col xs={24} md={14}>
+                <h4 className="text-pink-700">Tình yêu giai cấp</h4>
+                <p>
+                  - Tình yêu trong triết học Mác - Lênin không chỉ đơn thuần là
+                  cảm xúc cá nhân mà còn mang ý nghĩa đấu tranh giai cấp.
+                </p>
+                <p>
+                  - Giai cấp vô sản yêu nhau trên nền tảng cùng chung lý tưởng
+                  cách mạng, cùng đấu tranh để giải phóng giai cấp.
+                </p>
+                <p>
+                  Ví dụ: Công nhân và nông dân đoàn kết với nhau trong các phong
+                  trào cách mạng để giành quyền lợi chính đáng.
+                </p>
+              </Col>
+              <Col xs={24} md={10}>
+                <img
+                  src="https://phunuvietnam.mediacdn.vn/media/news/71e1d046417f3682dffa6f8f294da241/hnh-v-lenin-v-v.jpg"
+                  alt="Philosophy concept"
+                  className="w-full rounded-lg shadow-2xl hover:shadow-[0px_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300"
+                />
+              </Col>
+            </Row>
+            <Row gutter={[32, 32]} align="middle" className="mb-8">
+              <Col xs={24} md={10}>
+                <img
+                  src="https://hoilhpn.org.vn/documents/20182/1823217/small_11876.jpg/69ef86c9-dd9b-407e-b978-1bedf3c4948e"
+                  alt="Philosophy concept"
+                  className="w-full rounded-lg shadow-2xl hover:shadow-[0px_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300"
+                />
+              </Col>
+              <Col xs={24} md={14}>
+                <h4 className="text-pink-700">Tình yêu giai cấp</h4>
+                <p>
+                  - Tình yêu trong triết học Mác - Lênin không chỉ đơn thuần là
+                  cảm xúc cá nhân mà còn mang ý nghĩa đấu tranh giai cấp.
+                </p>
+                <p>
+                  - Giai cấp vô sản yêu nhau trên nền tảng cùng chung lý tưởng
+                  cách mạng, cùng đấu tranh để giải phóng giai cấp.
+                </p>
+                <p>
+                  Ví dụ: Công nhân và nông dân đoàn kết với nhau trong các phong
+                  trào cách mạng để giành quyền lợi chính đáng.
+                </p>
+              </Col>
+            </Row>
           </div>
         </Card>
+
+        <blockquote className="italic text-base text-center text-gray-600 mt-10">
+          "Sự phát triển của một người là điều kiện cho sự phát triển của tất cả
+          mọi người." – Karl Marx
+        </blockquote>
+
         <PhilosopherSlider />
+
+        <blockquote className="italic text-base text-center text-gray-600 mt-10 mb-10">
+          "Tình yêu thực sự không chỉ là yêu một cá nhân, mà là yêu cả xã hội và
+          đấu tranh vì một xã hội công bằng."
+        </blockquote>
+
+        <Card className="my-2 border-pink-300 shadow-md flex flex-row justify-start">
+          <div className="container  mx-auto">
+            <h2 className="text-2xl text-center text-pink-700">
+              Các quan điểm triết học khác về tình yêu
+            </h2>
+            <Row gutter={[32, 32]}>
+              <Col xs={24} md={8}>
+                <Card hoverable className="h-full p-2">
+                  <h3 className="text-pink-700 text-center">
+                    Chủ nghĩa hiện sinh
+                  </h3>
+                  <p>
+                    Tình yêu là sự tự do cá nhân, mang ý nghĩa hiện sinh và giúp
+                    con người tìm kiếm ý nghĩa cuộc sống.
+                  </p>
+                </Card>
+              </Col>
+              <Col xs={24} md={8}>
+                <Card hoverable className="h-full p-2">
+                  <h3 className="text-pink-700 text-center">
+                    Chủ nghĩa lãng mạn
+                  </h3>
+                  <p>
+                    Tình yêu là cảm xúc thuần khiết, là động lực giúp con người
+                    sáng tạo và vươn tới cái đẹp.
+                  </p>
+                </Card>
+              </Col>
+              <Col xs={24} md={8}>
+                <Card hoverable className="h-full p-2">
+                  <h3 className="text-pink-700 text-center">
+                    Chủ nghĩa thực dụng
+                  </h3>
+                  <p>
+                    Tình yêu có tính toán, dựa trên lợi ích cá nhân hoặc lợi ích
+                    tập thể.
+                  </p>
+                </Card>
+              </Col>
+            </Row>
+          </div>
+        </Card>
+
+        <blockquote className="italic text-base text-center text-gray-600 mt-10 mb-10">
+          “Yêu là tìm hạnh phúc của mình trong hạnh phúc của người khác.” –
+          Gottfried Wilhelm Leibniz
+        </blockquote>
+
         <Card className="my-4 border-pink-300 shadow-md">
           <h2 className="text-2xl text-center text-pink-700">
             So Sánh Các Triết Học Về Tình Yêu
@@ -94,9 +215,32 @@ const TinhYeuTrongTrietHoc = () => {
           </div>
         </Card>
 
-        <Card className="my-4 border-pink-300 shadow-md ">
+        <section className="py-16 text-white bg-gradient-to-r from-pink-500 to-blue-500">
+          <div className="container px-4 mx-auto text-center">
+            <Title level={2} className="text-white">
+              Khám Phá Thêm về Tình yêu trong Triết Học
+            </Title>
+            <Space size="large">
+              <a
+                target="_blank"
+                href="https://spiderum.com/bai-dang/Tinh-yeu-trong-con-mat-triet-hoc-YfBjTwxqHYRs"
+              >
+                <Button
+                  type="primary"
+                  size="large"
+                  ghost
+                  className="mb-8 text-white"
+                >
+                  Đọc Thêm <ArrowRightOutlined />
+                </Button>
+              </a>
+            </Space>
+          </div>
+        </section>
+
+        {/* <Card className="my-4 border-pink-300 shadow-md ">
           <CommentList />
-        </Card>
+        </Card> */}
       </section>
     </div>
   );
