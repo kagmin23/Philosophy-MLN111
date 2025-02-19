@@ -38,7 +38,7 @@ const TinhYeuTrongTrietHoc = () => {
         <PhilosopherSlider />
         <Card className="my-4 border-pink-300 shadow-md">
           <h2 className="text-2xl text-center text-pink-700">
-            Bảng So Sánh Các Triết Học Về Tình Yêu
+            So Sánh Các Triết Học Về Tình Yêu
           </h2>
           <table className="w-full border border-gray-200 shadow-sm rounded-lg overflow-hidden">
             <thead>
@@ -76,10 +76,6 @@ const TinhYeuTrongTrietHoc = () => {
           </table>
         </Card>
 
-        <Card className="my-4 border-pink-300 shadow-md ">
-          <CommentList />
-        </Card>
-
         <Card className="my-4 border-pink-300 shadow-md">
           <h2 className="text-2xl font-semibold text-center text-pink-600">
             Video Minh Họa
@@ -96,6 +92,10 @@ const TinhYeuTrongTrietHoc = () => {
               ></iframe>
             </div>
           </div>
+        </Card>
+
+        <Card className="my-4 border-pink-300 shadow-md ">
+          <CommentList />
         </Card>
       </section>
     </div>
