@@ -1,10 +1,5 @@
 import {
   ArrowRightOutlined,
-  BookOutlined,
-  HeartOutlined,
-  LockOutlined,
-  ReadOutlined,
-  TeamOutlined,
 } from "@ant-design/icons";
 import {
   Button,

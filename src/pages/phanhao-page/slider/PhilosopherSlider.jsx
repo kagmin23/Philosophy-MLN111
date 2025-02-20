@@ -1,9 +1,9 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Card } from "antd";
 import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Card } from "antd";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const philosophers = [
   {
@@ -44,7 +44,7 @@ const PhilosopherSlider = () => {
   return (
     <div className="mx-auto mt-10 rounded-lg">
       <Card className="my-4 border-pink-300 shadow-md">
-        <h2 className="text-2xl font-bold text-center text-pink-600 mb-5">
+        <h2 className="mb-5 text-2xl font-bold text-center text-pink-600">
           Quan Điểm Triết Học Về Tình Yêu
         </h2>
 
@@ -55,7 +55,7 @@ const PhilosopherSlider = () => {
           loop={true}
           slidesPerView={1}
           spaceBetween={20}
-          className="w-full mt-6 pb-10 max-w-lg"
+          className="w-full max-w-lg pb-10 mt-6"
         >
           {philosophers.map((philosopher) => (
             <SwiperSlide key={philosopher.id}>
@@ -63,12 +63,12 @@ const PhilosopherSlider = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
-                className="flex items-center space-x-4 p-4 rounded-lg shadow-md bg-pink-50 "
+                className="flex items-center p-4 space-x-4 rounded-lg shadow-md bg-pink-50 "
               >
                 <motion.img
                   src={philosopher.avatar}
                   alt={philosopher.name}
-                  className="w-20 h-20 rounded-full shadow-md border-2 border-pink-500"
+                  className="w-20 h-20 border-2 border-pink-500 rounded-full shadow-md"
                   whileHover={{
                     scale: 1.1,
                     boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.2)",
@@ -76,10 +76,10 @@ const PhilosopherSlider = () => {
                 />
 
                 <div className="flex flex-col">
-                  <p className="text-gray-600 italic text-lg leading-relaxed">
+                  <p className="text-lg italic leading-relaxed text-gray-600">
                     " {philosopher.quote} "
                   </p>
-                  <span className="text-sm text-gray-700 font-semibold mt-2 text-right">
+                  <span className="mt-2 text-sm font-semibold text-right text-gray-700">
                     – {philosopher.name}
                   </span>
                 </div>
