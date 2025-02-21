@@ -24,7 +24,7 @@ const HomePage = () => {
     <div className="min-h-screen">
       <div className="relative h-[500px] overflow-hidden">
         <img
-          src="/src/assets/back_triết tình.jpg"
+          src="https://i.pinimg.com/736x/43/8a/d5/438ad54dfbf4bebf3d4f7cd09ba55db5.jpg"
           alt="Hero background"
           className="object-cover w-full h-full"
         />
@@ -49,7 +49,7 @@ const HomePage = () => {
           <Row gutter={[32, 32]} align="middle">
             <Col xs={24} md={12}>
               <img
-                src="/src/assets/Kant.jpg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Immanuel_Kant_-_Gemaelde_1.jpg/800px-Immanuel_Kant_-_Gemaelde_1.jpg"
                 alt="Philosophy concept"
                 className="w-full rounded-lg shadow-2xl hover:shadow-[0px_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300"
               />
@@ -79,7 +79,7 @@ const HomePage = () => {
               <Card
                 hoverable
                 className="h-full p-2"
-                cover={<img alt="Reason" src="/api/placeholder/400/300" />}
+                cover={<img alt="Reason" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdw_LA4m-2sudATUury1mbxwV5pO8WM93_H-2Zug1e5uLouUxIBhI4pA1hLBC2ssi_5iB3oL2NJhRhFhT-OAi3UA" />}
               >
                 <Title level={4}>
                   <ReadOutlined className="mr-2 text-pink-500" />
@@ -94,7 +94,7 @@ const HomePage = () => {
               <Card
                 hoverable
                 className="h-full p-2"
-                cover={<img alt="Duty" src="/api/placeholder/400/300" />}
+                cover={<img alt="Duty" src="https://file3.qdnd.vn/data/images/0/2019/11/27/thuha/271119ha61.jpg" />}
               >
                 <Title level={4}>
                   <BookOutlined className="mr-2 text-blue-500" />
@@ -109,7 +109,7 @@ const HomePage = () => {
               <Card
                 hoverable
                 className="h-full p-2"
-                cover={<img alt="Application" src="/api/placeholder/400/300" />}
+                cover={<img alt="Application" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Lenin_in_1920_%28cropped%29.jpg" />}
               >
                 <Title level={4}>
                   <TeamOutlined className="mr-2 text-green-500" />
@@ -186,21 +186,21 @@ const HomePage = () => {
               >
                 <div>
                   <img
-                    src="/src/assets/Carousel_triết.jpg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Charles-Joseph_Natoire_-_V%C3%A9nus_et_Adonis.jpg/1200px-Charles-Joseph_Natoire_-_V%C3%A9nus_et_Adonis.jpg"
                     alt="Freedom"
                     className="w-full"
                   />
                 </div>
                 <div>
                   <img
-                    src="/src/assets/Carousel_triết3.jpg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Carle_van_Loo_-_Baccus_et_Ariane.jpg/800px-Carle_van_Loo_-_Baccus_et_Ariane.jpg"
                     alt="Responsibility"
                     className="w-full"
                   />
                 </div>
                 <div>
                   <img
-                    src="/src/assets/Carousel_triết2.jpg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/N%C3%AEmes_%28Gard%29_-_Mus%C3%A9e_des_Beaux-Arts_-_%22V%C3%A9nus_et_Adonis_ou_Aurore_et_C%C3%A9phale%22_%28Charles-Joseph_Natoire%2C_1700-1777%29_%2839513470991%29.jpg/800px-N%C3%AEmes_%28Gard%29_-_Mus%C3%A9e_des_Beaux-Arts_-_%22V%C3%A9nus_et_Adonis_ou_Aurore_et_C%C3%A9phale%22_%28Charles-Joseph_Natoire%2C_1700-1777%29_%2839513470991%29.jpg?20210503123300"
                     alt="Love"
                     className="w-full"
                   />
