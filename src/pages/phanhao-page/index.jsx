@@ -29,7 +29,7 @@ const TinhYeuTrongTrietHoc = () => {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="min-h-screen p-6 mt-5 bg-gradient-to-b from-pink-50 to-white"
+      className="min-h-screen mt-5 bg-gradient-to-b from-pink-50 to-white"
     >
       <header className="px-4 py-6 text-center text-pink-700">
         <motion.h1 variants={fadeIn} className="text-4xl">
@@ -256,12 +256,7 @@ const TinhYeuTrongTrietHoc = () => {
               target="_blank"
               href="https://spiderum.com/bai-dang/Tinh-yeu-trong-con-mat-triet-hoc-YfBjTwxqHYRs"
             >
-              <Button
-                type="primary"
-                size="large"
-                ghost
-                className="mb-8 text-white"
-              >
+              <Button type="primary" size="large" ghost className="text-white">
                 Đọc Thêm <ArrowRightOutlined />
               </Button>
             </a>
