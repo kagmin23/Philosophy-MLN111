@@ -1,6 +1,4 @@
-import {
-  ArrowRightOutlined,
-} from "@ant-design/icons";
+import { ArrowRightOutlined } from "@ant-design/icons";
 import {
   Button,
   Card,
@@ -18,7 +16,7 @@ const TrachNhiemTrongTrietHoc = () => {
     <div className="min-h-screen">
       <div className="relative h-[500px] overflow-hidden mt-20">
         <img
-          src="/src/assets/back_triết tình.jpg"
+          src="https://i.pinimg.com/736x/43/8a/d5/438ad54dfbf4bebf3d4f7cd09ba55db5.jpg"
           alt="Hero background"
           className="object-cover w-full h-full"
         />

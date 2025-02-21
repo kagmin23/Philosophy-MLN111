@@ -35,9 +35,14 @@ const HomePage = () => {
               <Paragraph className="text-xl text-white/90">
                 Khám phá chiều sâu của tình yêu và trách nhiệm trong triết học
               </Paragraph>
-              <Button type="primary" size="large" className="mt-8">
-                Tìm hiểu thêm
-              </Button>
+              <a
+                href="https://www.thitruongtudo.vn/chi-tiet/nhung-van-de-triet-hoc-ve-tu-do-va-trach-nhiem.html"
+                target="_blank"
+              >
+                <Button type="primary" size="large" className="mt-8">
+                  Tìm hiểu thêm
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -47,14 +52,14 @@ const HomePage = () => {
       <section className="py-10 bg-gray-50">
         <div className="container px-4 mx-auto">
           <Row gutter={[32, 32]} align="middle">
-            <Col xs={24} md={12}>
+            <Col xs={24} md={6}>
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Immanuel_Kant_-_Gemaelde_1.jpg/800px-Immanuel_Kant_-_Gemaelde_1.jpg"
                 alt="Philosophy concept"
                 className="w-full rounded-lg shadow-2xl hover:shadow-[0px_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300"
               />
             </Col>
-            <Col xs={24} md={12}>
+            <Col xs={24} md={18}>
               <Title level={2} className="mb-6 text-blue-600">
                 <HeartOutlined className="mr-2" />
                 Khái Niệm Cơ Bản
@@ -62,6 +67,20 @@ const HomePage = () => {
               <Paragraph className="text-lg text-gray-700">
                 Tình yêu và trách nhiệm là hai yếu tố then chốt trong đời sống
                 con người, ảnh hưởng tới gia đình, cộng đồng và xã hội.
+              </Paragraph>
+              <Paragraph className="text-lg text-gray-700">
+                - Tình yêu thể hiện qua sự quan tâm, chia sẻ và gắn kết giữa cá
+                nhân với nhau, từ tình cảm gia đình, bạn bè đến tình yêu đôi
+                lứa.
+              </Paragraph>
+              <Paragraph className="text-lg text-gray-700">
+                - Trách nhiệm đi kèm với tình yêu, thể hiện qua sự cam kết, chăm
+                sóc và bảo vệ những người mà ta yêu thương.
+              </Paragraph>
+              <Paragraph className="text-lg text-gray-700">
+                Cả hai yếu tố này đóng vai trò quan trọng trong việc duy trì sự
+                ổn định của gia đình, xây dựng cộng đồng vững mạnh và phát triển
+                một xã hội hài hòa.
               </Paragraph>
             </Col>
           </Row>
@@ -79,7 +98,12 @@ const HomePage = () => {
               <Card
                 hoverable
                 className="h-full p-2"
-                cover={<img alt="Reason" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdw_LA4m-2sudATUury1mbxwV5pO8WM93_H-2Zug1e5uLouUxIBhI4pA1hLBC2ssi_5iB3oL2NJhRhFhT-OAi3UA" />}
+                cover={
+                  <img
+                    alt="Reason"
+                    src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdw_LA4m-2sudATUury1mbxwV5pO8WM93_H-2Zug1e5uLouUxIBhI4pA1hLBC2ssi_5iB3oL2NJhRhFhT-OAi3UA"
+                  />
+                }
               >
                 <Title level={4}>
                   <ReadOutlined className="mr-2 text-pink-500" />
@@ -94,7 +118,12 @@ const HomePage = () => {
               <Card
                 hoverable
                 className="h-full p-2"
-                cover={<img alt="Duty" src="https://file3.qdnd.vn/data/images/0/2019/11/27/thuha/271119ha61.jpg" />}
+                cover={
+                  <img
+                    alt="Duty"
+                    src="https://file3.qdnd.vn/data/images/0/2019/11/27/thuha/271119ha61.jpg"
+                  />
+                }
               >
                 <Title level={4}>
                   <BookOutlined className="mr-2 text-blue-500" />
@@ -109,7 +138,12 @@ const HomePage = () => {
               <Card
                 hoverable
                 className="h-full p-2"
-                cover={<img alt="Application" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Lenin_in_1920_%28cropped%29.jpg" />}
+                cover={
+                  <img
+                    alt="Application"
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Lenin_in_1920_%28cropped%29.jpg"
+                  />
+                }
               >
                 <Title level={4}>
                   <TeamOutlined className="mr-2 text-green-500" />
@@ -125,11 +159,10 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Sartre's Philosophy Section */}
       <section className="py-16 bg-white">
-        <div className="container px-4 mx-auto">
+        <div className="container px-20 mx-auto">
           <Row gutter={[48, 48]} align="middle">
-            <Col xs={24} md={12}>
+            <Col xs={24} md={14}>
               <Title level={2} className="mb-8">
                 <LockOutlined className="mr-2" />
                 Sartre: Tự Do và Trách Nhiệm
@@ -179,7 +212,7 @@ const HomePage = () => {
                 ]}
               />
             </Col>
-            <Col xs={24} md={12}>
+            <Col xs={24} md={10}>
               <Carousel
                 autoplay
                 className="overflow-hidden rounded-lg shadow-xl"
@@ -218,12 +251,20 @@ const HomePage = () => {
             Khám Phá Thêm về Triết Học Tình Yêu
           </Title>
           <Space size="large">
-            <Button type="primary" size="large" ghost>
-              Đọc Thêm <ArrowRightOutlined />
-            </Button>
-            <Button type="default" size="large" className="bg-white">
-              Liên Hệ Ngay
-            </Button>
+            <a
+              target="_blank"
+              href="https://www.thitruongtudo.vn/chi-tiet/nhung-van-de-triet-hoc-ve-tu-do-va-trach-nhiem.html"
+            >
+              <Button
+                type="primary"
+                size="large"
+                ghost
+                className="mb-8 text-white"
+              >
+                {" "}
+                Đọc Thêm <ArrowRightOutlined />
+              </Button>
+            </a>
           </Space>
         </div>
       </section>
