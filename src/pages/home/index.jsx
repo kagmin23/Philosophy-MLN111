@@ -123,7 +123,7 @@ const HomePage = () => {
                 >
                   <Card
                     hoverable
-                    className="h-[450px] flex flex-col justify-between"
+                    className="h-[500px] flex flex-col justify-between"
                     cover={
                       <img
                         alt={item.title}
