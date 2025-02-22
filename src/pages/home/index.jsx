@@ -55,7 +55,8 @@ const HomePage = () => {
             <div className="max-w-2xl text-white">
               <Title className="mb-6 text-white">Triết Tình</Title>
               <Paragraph className="text-xl text-white/90">
-                Khám phá chiều sâu của tình yêu và trách nhiệm trong triết học
+                "Nơi triết lý và cảm xúc giao hòa." <br /> Khám phá chiều sâu
+                của tình yêu và trách nhiệm trong triết học
               </Paragraph>
               <a
                 href="https://www.thitruongtudo.vn/chi-tiet/nhung-van-de-triet-hoc-ve-tu-do-va-trach-nhiem.html"
