@@ -9,33 +9,38 @@ const philosophers = [
   {
     id: 1,
     name: "Karl Marx",
-    avatar: "https://i.pravatar.cc/150?img=1",
+    avatar:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK8Qy_sV4IG5dRn3H4zQa7KGh8id95f80P0Q&s",
     quote:
       "Sự phát triển của một người là điều kiện cho sự phát triển của tất cả mọi người.",
   },
   {
     id: 2,
     name: "Friedrich Nietzsche",
-    avatar: "https://i.pravatar.cc/150?img=2",
+    avatar:
+      "https://bizweb.dktcdn.net/thumb/grande/100/422/960/products/1-8c4c26d8-909b-4f83-8a25-bceeaae9e590.jpg?v=1630731282127",
     quote:
       "Không có gì quý hơn tình yêu, nhưng cũng không có gì nguy hiểm hơn nó.",
   },
   {
     id: 3,
     name: "Plato",
-    avatar: "https://i.pravatar.cc/150?img=3",
+    avatar:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0EnZba14je7yOCV_UnOeY2dMQG7_l251aXA&s",
     quote: "Tình yêu là khát vọng vĩnh cửu đối với cái đẹp tuyệt đối.",
   },
   {
     id: 4,
     name: "Aristotle",
-    avatar: "https://i.pravatar.cc/150?img=4",
+    avatar:
+      "https://media.licdn.com/dms/image/C5612AQF4ZixFVDy-_w/article-cover_image-shrink_720_1280/0/1639655999600?e=2147483647&v=beta&t=WzoYRxMCg-kdk37Pds73Xe0B9iCStWsX4c9czDShfiI",
     quote: "Tình yêu là hành động của linh hồn hướng tới sự hoàn thiện.",
   },
   {
     id: 5,
     name: "Confucius",
-    avatar: "https://i.pravatar.cc/150?img=5",
+    avatar:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7wfbvPwS-9_esBoFN-DhNs6ISDFyBizMDP12WCzB312tqkpeF5qfZy1jbDQpGNTdwmQ&usqp=CAU",
     quote: "Tình yêu bắt đầu từ sự tôn trọng và lòng nhân ái.",
   },
 ];
@@ -80,7 +85,7 @@ const PhilosopherSlider = () => {
                     " {philosopher.quote} "
                   </p>
                   <span className="mt-2 text-sm font-semibold text-right text-gray-700">
-                    – {philosopher.name}
+                    {philosopher.name}
                   </span>
                 </div>
               </motion.div>
